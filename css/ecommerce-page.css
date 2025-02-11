@@ -37,9 +37,16 @@ section {
 }
 
 .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
 }
 
 .logo {
@@ -54,6 +61,9 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search-bar input {
@@ -71,12 +81,17 @@ section {
 }
 
 .options {
+  display: flex;
+  justify-content: space-between;
 }
 
 .option {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .option i {
@@ -87,6 +102,9 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .category {
@@ -111,6 +129,16 @@ section {
 }
 
 .view-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+.view-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 i.fa-th-list {
@@ -120,6 +148,9 @@ i.fa-th-list {
 .section-control {
   padding-bottom: 20px;
   border-bottom: 1px solid #8d8ba5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .section-control .view-option {
@@ -182,6 +213,10 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 30px;
+  row-gap: 30px;
 }
 
 .grid .product {
