@@ -46,7 +46,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
+  width: 660px;
 }
 
 .logo {
@@ -215,13 +215,15 @@ i.fa-th-list {
 .grid.products {
   display: flex;
   flex-flow: row wrap;
-  column-gap: 30px;
-  row-gap: 30px;
+  gap: 30px;
 }
 
 .grid .product {
   width: 300px;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .grid .product-image-wrapper {
@@ -230,25 +232,41 @@ i.fa-th-list {
 
 .grid .product-data {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid .product-info {
   text-align: center;
   padding: 0 20px 30px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .grid .product-action {
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .lines .product {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .lines .product-image-wrapper {
@@ -257,20 +275,43 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
 }
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 30px;
 }
 
 .lines .product-action {
+  border-left: 1px solid #8d8ba5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  gap: 20px;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .lines-action .product {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
 .lines-action .product-image-wrapper {
@@ -279,13 +320,19 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .lines-action .product-action {
-  border-left: 1px solid #8d8ba5;
-  padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  gap: 30px;
 }
